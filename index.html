@@ -62,5 +62,25 @@
     <h3>About</h3>
     <p>A negyedik oldal, ha minden igaz.</p>
   </div>
+  
+  <script type="text/javascript">
+      function openPage(pageName, elemnt, color){
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.lenght; i++){
+               tabcontent[i].style.display = "none";
+          }
+        
+          tablinks = document.getElementsByClassName("tablink");
+          for(i = 0; i < tablinks.lenght; i++){
+              tablinks[i].style.backgroundColor = "";
+          }
+        
+          document.getElementsById(pageName).style.display = "block";
+          elemnt.style.backgroundColor = color;
+      }
+  </script>
+  
+  
 </body>
 </html>
