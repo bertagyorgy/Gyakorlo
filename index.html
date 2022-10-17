@@ -5,7 +5,29 @@
   <meta charset="utf-8">
   <meta name ="viewport" content="width=device-width, initial-scale=1">
   
-  <style></style>
+  <style>
+  
+    *{
+        box-sizing: border-box;
+    }
+    
+    body, html{
+        height: 100%;
+        margin: 0;
+        font-family: Lato, sans-serif;
+    }
+    .tablink{
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+    }
+  </style>
 </head>
 <body>
   <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
@@ -13,5 +35,21 @@
   <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
   <button class="tablink" onclick="openPage('About', this, 'indigo')">About</button>
   
+  <div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <p>Az első oldal, ha minden igaz.</p>
+  </div>
+  <div id="News" class="tabcontent">
+    <h3>News</h3>
+    <p>A második oldal, ha minden igaz.</p>
+  </div>
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>A harmadik oldal, ha minden igaz.</p>
+  </div>
+  <div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p>A negyedik oldal, ha minden igaz.</p>
+  </div>
 </body>
 </html>
