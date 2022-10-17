@@ -56,7 +56,7 @@
 <body>
   <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
   <button class="tablink" onclick="openPage('News', this, 'violet')">News</button>
-  <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'blue')" id="defaultOpen">Contact</button>
   <button class="tablink" onclick="openPage('About', this, 'indigo')">About</button>
   
   <div id="Home" class="tabcontent">
@@ -92,6 +92,8 @@
           document.getElementsById(pageName).style.display = "block";
           elemnt.style.backgroundColor = color;
       }
+    
+      document.getElementById("defaultOpen").click();
   </script>
   
   
